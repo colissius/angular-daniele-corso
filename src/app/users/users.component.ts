@@ -10,9 +10,9 @@ export class UsersComponent implements OnInit {
   title = 'Users';
   users: any[] = [];
 
-  constructor(private service: UserService) {
-    this.users = service.getUsers();
-  }
+  constructor(private service: UserService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.users = this.service.getUsers();
+  }
 }
