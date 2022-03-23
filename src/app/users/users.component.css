@@ -1,7 +1,6 @@
 table {
   border: 1px solid #c0c0c0;
 }
-td,
 th {
   padding: 5px;
   border: 1px solid #ffff;
@@ -10,8 +9,4 @@ th {
   color: green;
   background-color: black;
   padding: 5px;
-}
-td {
-  background-color: silver;
-  color: red;
 }
