@@ -1,4 +1,11 @@
 <hello name="{{ name }}"></hello>
 <p>Hello word</p>
 
-<app-users></app-users>
+<div class="main">
+  <div class="users">
+    <app-users></app-users>
+  </div>
+  <div class="userDetail" *ngIf="false">
+    <app-user-detail></app-user-detail>
+  </div>
+</div>
