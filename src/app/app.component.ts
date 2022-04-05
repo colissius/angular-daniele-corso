@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { User } from './interfaces/user';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +7,10 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  userSelected: User;
   name = 'My app';
+
+  updateUser(user: User) {
+    this.userSelected = user;
+  }
 }

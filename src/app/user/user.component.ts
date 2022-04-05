@@ -10,10 +10,16 @@ import { UserService } from '../services/user.service';
 export class UserComponent implements OnInit {
   @Input('user-data') user: User | undefined;
   @Output('onDeleteUser') userDeleted = new EventEmitter();
+  @Output('onSelectUser') onSelectUser = new EventEmitter();
+
   constructor(private userService: UserService) {}
 
   deleteUser() {
     this.userDeleted.emit(this.user);
+  }
+
+  updateUser() {
+    this.onSelectUser.emit(this.user);
   }
 
   ngOnInit() {}

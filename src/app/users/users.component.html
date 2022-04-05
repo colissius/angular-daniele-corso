@@ -19,5 +19,6 @@
     *ngFor="let user of users"
     [user-data]="user"
     (onDeleteUser)="onDeleteUser($event)"
+    (onSelectUser)="onSelectUser($event)"
   ></tr>
 </table>
