@@ -13,7 +13,7 @@ export class UserService {
       email: 'email',
       phone: 'phone',
       province: 'province',
-      age: 'age',
+      age: '30',
     },
     {
       name: 'name1',
@@ -22,7 +22,7 @@ export class UserService {
       email: 'email1',
       phone: 'phone1',
       province: 'province1',
-      age: 'age1',
+      age: '60',
     },
     {
       name: 'name2',
@@ -31,7 +31,7 @@ export class UserService {
       email: 'email2',
       phone: 'phone2',
       province: 'province2',
-      age: 'age2',
+      age: '90',
     },
   ];
 
